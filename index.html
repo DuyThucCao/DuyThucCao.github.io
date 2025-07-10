@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Thuc Cao - Portfolio</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet"> 
+  <style> 
+   body { 
+    color: #333333; 
+    font-family: 'Inter', sans-serif; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+   } 
+   .section-title { 
+    border-bottom: 2px solid #ff4081; 
+    padding-bottom: 0.5rem; 
+    display: inline-block; 
+   } 
+   .nav-link-active { 
+    color: #ff4081 !important; 
+    background-color: #e5e7eb !important; /* A slightly darker gray for active link */
+   } 
+   .fade-in-up { 
+    animation: fadeInUp 0.6s ease-out forwards; 
+   } 
+   .fade-in-scale { 
+    animation: fadeInScale 0.6s ease-out forwards; 
+   } 
+   @keyframes fadeInUp { 
+    from { opacity: 0; transform: translateY(20px); } 
+    to { opacity: 1; transform: translateY(0); } 
+   } 
+   @keyframes fadeInScale { 
+    from { opacity: 0; transform: scale(0.95); } 
+    to { opacity: 1; transform: scale(1); } 
+   } 
+  </style> 
+ </head> 
+ <body class="min-h-screen flex flex-col bg-gray-50"> 
+
+  <header class="bg-white shadow-md sticky top-0 z-50"> 
+   <div class="container mx-auto px-4 sm:px-6 lg:px-8"> 
+    <nav class="flex items-center justify-between h-16"> 
+     <div>
+      <a href="#hero" id="nav-hero" class="text-xl font-bold text-gray-800">Thuc Cao</a> 
+     </div> 
+     <ul class="flex space-x-2 sm:space-x-4"> 
+      <li><a href="#about" id="nav-about" class="text-black hover:underline font-medium px-3 py-2 rounded-md text-sm sm:text-base transition-all duration-300 inline-block hover:scale-105 hover:bg-gray-200">About</a></li> 
+      <li><a href="#resume" id="nav-resume" class="text-black hover:underline font-medium px-3 py-2 rounded-md text-sm sm:text-base transition-all duration-300 inline-block hover:scale-105 hover:bg-gray-200">Resume</a></li> 
+      <li><a href="#contact" id="nav-contact" class="text-black hover:underline font-medium px-3 py-2 rounded-md text-sm sm:text-base transition-all duration-300 inline-block hover:scale-105 hover:bg-gray-200">Contact</a></li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </header> 
+
+  <!-- Main Content --> 
+  <main role="main" class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow"> 
+   <!-- HOME --> 
+   <section id="section-hero" class="fade-in-up"> 
+    <section class="pt-12 pb-8 md:pt-20 md:pb-16"> 
+     <div class="flex flex-col md:flex-row items-start justify-center gap-8 md:gap-12">
+        <!-- Left Column -->
+        <!-- UPDATED: Removed fractional widths to let content define size -->
+        <div class="w-full md:w-auto text-center md:text-left fade-in-scale flex-shrink-0">
+            <img src="https://placehold.co/150x150/E0E0E0/333333?text=Thuc+Cao" alt="Thuc Cao profile picture" class="w-56 h-56 rounded-full shadow-lg object-cover mx-auto md:mx-0" /> 
+            <div class="mt-6 fade-in-up" style="animation-delay: 0.2s;">
+                <h1 class="text-3xl font-bold text-gray-800 uppercase tracking-wider">Thuc Cao</h1>
+                <p class="text-sm text-gray-500 mt-2">duythuccao@outlook.com</p>
+            </div>
+        </div>
+        <!-- Right Column -->
+        <!-- UPDATED: Removed fractional widths and let max-width control the size -->
+        <div class="w-full bg-white border border-gray-200 rounded-lg p-12 shadow-sm fade-in-up max-w-4xl" style="animation-delay: 0.4s;">
+            <h2 class="text-2xl font-bold text-gray-800 uppercase tracking-widest">Welcome | Chào Mừng</h2>
+            <hr class="my-4 border-gray-300"/>
+            <!-- UPDATED: New welcome text -->
+            <div class="text-gray-700 space-y-4">
+                <p> 
+                    <p>
+                        <i>"Deep in most of us is a potential for greatness or the potential to inspire greatness."</i>
+                    </p>
+                    </p>
+                    Welcome to my website. Feel free to learn more <a href="#about" class="text-blue-600 hover:underline nav-internal">about me</a>, or browse through my <a href="#resume" class="text-blue-600 hover:underline nav-internal">resume</a>. 
+                </p> 
+                <p> 
+                    I am actively seeking research, internship, and full-time opportunities in Data Science, Applied Statistics, or Financial economics where I can contribute to meaningful and impactful work.  If you believe I may be a good fit for your team or project, please <a href="#contact" class="text-blue-600 hover:underline nav-internal">contact</a> me via email.
+                </p>
+            </div>
+        </div>
+     </div> 
+    </section> 
+   </section> 
+    
+   <!-- ABOUT --> 
+   <section id="section-about" class="hidden py-12 md:py-16 fade-in-up bg-white rounded-lg shadow-sm p-8"> 
+    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 section-title">About Me</h2> 
+    <div class="space-y-4 text-gray-700"> 
+     <p> 
+        I am a Senior student at Rutgers University with a strong interest in data, statistics, and economics. My background includes coursework and projects involving Python, R, SQL, Excel, and data visualization tools. I am passionate about solving real-world problems using data and eager to continue learning and collaborating on impactful research.
+     </p> 
+     <p> 
+        Outside of my academic pursuits, I lead an active lifestyle. I enjoy hiking and playing sports such as tennis, badminton, and table tennis <span class="ml-1 inline-block align-middle">🙂</span>
+     </p> 
+     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Technical Skills</h3> 
+     <ul class="list-disc list-inside space-y-1"> 
+      <li>Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)</li> 
+      <li>R (dplyr, ggplot2, tidyverse, Shiny)</li> 
+      <li>SQL (, MySQL)</li> 
+      <li>Excel (PivotTables, VLOOKUP, Advanced Formulas, VBA)</li> 
+      <li>Data Visualization (Tableau, Power BI)</li> 
+     </ul> 
+    </div> 
+   </section> 
+
+   <!-- RESUME -->
+        <section id="section-resume" class="hidden py-12 md:py-16 fade-in-up bg-white rounded-lg shadow-sm p-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 section-title">Resume</h2>
+            <div class="text-center">
+                <p class="text-gray-700 mb-6">
+                    You can view my full resume for a detailed look at my experience and qualifications.
+                </p>
+                <!-- UPDATED: Added link to resume and download attribute -->
+                <a href="ThucCao_Resume.pdf" download="ThucCao_Resume.pdf" class="bg-pink-600 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-pink-700 transform transition-all duration-300 hover:scale-105 active:scale-95 text-lg" 
+                   target="_blank" rel="noopener noreferrer">
+                    Resume (PDF)
+                </a>
+                <p class="mt-4 text-gray-600 text-sm">
+                </p>
+            </div>
+        </section>
+
+   <!-- CONTACT --> 
+   <section id="section-contact" class="hidden py-12 md:py-16 bg-white rounded-lg p-6 md:p-8 fade-in-up shadow-sm"> 
+    <div class="text-center"> 
+     <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 section-title">Get In Touch</h2> 
+     <p class="text-gray-700 mb-8 max-w-lg mx-auto"> 
+      I'd love to connect! If you have any questions, collaboration opportunities, or just want to say hello, please don't hesitate to reach out. 
+     </p> 
+     <div class="flex flex-row flex-wrap justify-center items-center gap-x-6 gap-y-4 md:gap-x-8"> 
+      <a href="mailto:duythuccao@outlook.com" title="Email" class="text-blue-600 hover:text-pink-500 transform transition-all duration-300 hover:scale-110"> 
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"> 
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /> 
+       </svg> 
+      </a> 
+      <a href="https://www.linkedin.com/in/thucduycao/" title="LinkedIn" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-pink-500 transform transition-all duration-300 hover:scale-110"> 
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8"> 
+        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.75c0-1.25-.5-2.25-1.75-2.25S12.5 13 12.5 14.25V19h-3v-9h2.9v1.35c.4-.75 1.3-1.35 2.6-1.35 2.8 0 3.5 1.85 3.5 4.25z"></path> 
+       </svg> 
+      </a> 
+      <a href="https://x.com/DuyThucCao" title="X (Twitter)" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-pink-500 transform transition-all duration-300 hover:scale-110"> 
+       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8"> 
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/> 
+       </svg> 
+      </a> 
+     </div> 
+    </div> 
+   </section> 
+  </main> 
+
+  <script> 
+   // SPA Navigation Logic (vanilla JS) 
+   const sections = [ 
+    'hero', 
+    'about',  
+    'resume', 
+    'contact' 
+   ]; 
+
+   function showSection(section) { 
+    sections.forEach(s => { 
+     const el = document.getElementById('section-' + s); 
+     if (el) el.classList.add('hidden'); 
+     
+     // Remove nav-link-active class from other nav items 
+     const nav = document.getElementById('nav-' + s); 
+     if (nav) nav.classList.remove('nav-link-active'); 
+    }); 
+
+    // Show the requested section 
+    const el = document.getElementById('section-' + section); 
+    if (el) el.classList.remove('hidden'); 
+
+    // Set active nav link (for About, Projects, etc.)
+    const nav = document.getElementById('nav-' + section); 
+    if (nav && section !== 'hero') { // Don't apply this style to the main hero link
+        nav.classList.add('nav-link-active');
+    }
+    
+    window.scrollTo(0, 0); 
+   } 
+
+   // Attach click handlers 
+   sections.forEach(section => { 
+    const nav = document.getElementById('nav-' + section); 
+    if (nav) { 
+     nav.addEventListener('click', function(e) { 
+      e.preventDefault(); 
+      showSection(section); 
+      // Update hash in URL for better history/linking
+      window.history.pushState(null, '', '#' + section);
+     }); 
+    } 
+   }); 
+   // For in-page internal nav links 
+   document.querySelectorAll('.nav-internal').forEach(link => { 
+    link.addEventListener('click', function(e) { 
+     const hash = this.getAttribute('href'); 
+     if (hash && hash.startsWith('#')) { 
+      const page = hash.substring(1); 
+      if (sections.includes(page)) { 
+       e.preventDefault(); 
+       showSection(page); 
+       // Update hash in URL for better history/linking
+       window.history.pushState(null, '', '#' + page);
+      } 
+     } 
+    }); 
+   }); 
+
+   // SPA: Show section based on hash (if any) 
+   function handleHash() { 
+    const hash = window.location.hash.replace('#', ''); 
+    if (sections.includes(hash)) { 
+     showSection(hash); 
+    } else { 
+     showSection('hero'); 
+    } 
+   } 
+   
+   // Listen for back/forward browser navigation
+   window.addEventListener('popstate', handleHash);
+   // Handle initial page load
+   window.addEventListener('DOMContentLoaded', handleHash); 
+  </script> 
+ </body> 
+ </html>
